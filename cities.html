@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
   <title>Travelling to different cities</title>
   <meta charset="utf-8">
@@ -11,8 +14,38 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
+
+    <style>
+      caption {
+          text-align: left;
+          caption-side: top;
+          position: relative;
+      }
+    </style>
+
+
+  </head>
 <body>
+
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link active" href="basic.html">Basic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="advanced.html">Advanced</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  
   
     <h1> “Visit cities with Avinash Chalam Chinnala”</h1>
 
@@ -37,5 +70,216 @@
 <br>
 <p>The row containing city names will first experience layout issues because it's defined with the "col-md" class, optimized for medium-sized screens and larger. As the screen size decreases, the city names will no longer fit correctly within their designated column and will break into multiple lines. On the other hand, the column displaying letters, styled with the "col-sm-2" class suitable for smaller screens, will continue to fit neatly even as the screen size decreases
 </p>
+
+<br>
+
+<div class="container">
+    <img src="Hyderabad.jpeg" class="img-fluid" alt="Image of Hyderabad" height="400" width="400">
+    <img src="Indore.jpg" class="img-fluid" alt="Image of Indore" height="400" width="400">
+    <img src="Newyork.jpeg" class="img-fluid" alt="Image of Newyork" height="400" width="400">
+</div>
+<br>
+<br>
+<br>
+
+<div class="thumbnail-container">
+  <img src="Hyderabad.jpeg" class="img-thumbnail" alt="Image of Hyderabad" height="400" width="400">
+  <img src="Indore.jpg" class="img-thumbnail" alt="Image of Indore" height="400" width="400">
+  <img src="Newyork.jpeg" class="img-thumbnail" alt="Image of Newyork" height="400" width="400">
+</div>
+
+<br>
+
+<table class="table table-bordered table-striped table-hover table-sm">
+  <caption>Cities, Rivers and Trees</caption>
+  <thead class="table-dark">
+      <tr>
+          <th scope="col">Letter</th>
+          <th scope="col">City</th>
+          <th scope="col">River</th>
+          <th scope="col">Tree</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr class="table-info" scope="row">
+          <td>C</td>
+          <td>Cannes</td>
+          <td>Cacapon</td>
+          <td>Cannonball</td>
+      </tr>
+      <tr class="table-secondary" scope="row">
+          <td>H</td>
+          <td>Hyderabad</td>
+          <td>Hwang-ho</td>
+          <td>Hazel</td>
+      </tr>
+      <tr class="table-info" scope="row">
+          <td>I</td>
+          <td>Indore</td>
+          <td>Iditarod</td>
+          <td>Indigo</td>
+      </tr>
+      <tr class="table-secondary" scope="row">
+          <td>N</td>
+          <td>Newyork</td>
+          <td>Nabesna</td>
+          <td>Namboca</td>
+      </tr>
+      <tr class="table-info" scope="row">
+          <td>N</td>
+          <td>Nashville</td>
+          <td>Naches</td>
+          <td>Nectarine</td>
+      </tr>
+      <tr class="table-secondary" scope="row">
+          <td>A</td>
+          <td>Amsterdam</td>
+          <td>Abiqua</td>
+          <td>Amla</td>
+      </tr>
+  </tbody>
+</table>
+
+<br>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sm">
+  <a class="navbar-brand" href="#">Button Groups</a>
+</nav>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="Image buttons">
+      <button type="button" class="btn btn-success">C</button>
+      <button type="button" class="btn btn-success">H</button>
+      <button type="button" class="btn btn-success">I</button>
+  </div>
+  <div class="btn-group me-2" role="group" aria-label="Alert buttons">
+      <button type="button" class="btn btn-warning">N</button>
+      <button type="button" class="btn btn-warning">N</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Danger buttons">
+      <button type="button" class="btn btn-danger">A</button>
+  </div>
+</div>
+
+<br>
+<br>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sm">
+  <a class="navbar-brand" href="#">Dropdown</a>
+</nav>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary active dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          C
+      </button>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">C</a></li>
+          <li><a class="dropdown-item" href="#">H</a></li>
+          <li><a class="dropdown-item" href="#">I</a></li>
+          <li><a class="dropdown-item" href="#">N</a></li>
+          <li><a class="dropdown-item" href="#">N</a></li>
+          <li><a class="dropdown-item" href="#">A</a></li>
+      </ul>
+  </div>
+  <button type="button" class="btn btn-primary">H</button>
+  <button type="button" class="btn btn-primary">I</button>
+  <button type="button" class="btn btn-primary">N</button>
+  <button type="button" class="btn btn-primary">N</button>
+  <button type="button" class="btn btn-primary">A</button>
+</div>
+
+<br>
+<br>
+<br><br>
+<br>
+
+<br>
+<div class="btn-group" role="group">
+  <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Reference to Pages
+  </button>
+  <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+      <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+  </ul>
+</div>
+
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+
+<form>
+  <div class="form-group mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="form-group mb-3">
+      <label for="exampleInputPassword1" class="form-label">City</label>
+      <input type="text" class="form-control" id="userCity" placeholder="Enter your city">
+  </div>
+  <div class="form-check mb-3">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Hyderabad.jpeg" class="card-img-top" alt="City 1 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Hyderabad</h5>
+                        <p class="card-text">Hyderabad, the capital city of the Indian state of Telangana and a significant 
+                          urban center in Andhra Pradesh, is a vibrant fusion of history, culture, and modernity. Nestled along the banks of the Musi River, Hyderabad is renowned for its rich heritage, characterized by the iconic Charminar, 
+                          a 16th-century monument symbolizing the city's architectural brilliance and cultural diversity. </p>
+                        <a href="hyderabad.html" class="btn btn-primary" target="_blank">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Indore.jpg" class="card-img-top" alt="City 2 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Indore</h5>
+                        <p class="card-text">Indore, often referred to as the "Cleanest City of India" and the commercial capital of Madhya Pradesh,
+                           is a bustling metropolis steeped in history and economic growth. Nestled in the heart of central India, Indore seamlessly blends traditional charm with modern development. The city boasts a rich historical heritage, evident in landmarks like the Lal Bagh Palace and Rajwada,
+                           offering a glimpse into its regal past under the Holkar dynasty</p>
+                        <a href="indore.html" class="btn btn-primary" target="_blank">View More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Newyork.jpeg" class="card-img-top" alt="City 3 Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Newyork</h5>
+                        <p class="card-text">New York City, often simply referred to as New York, is an iconic global metropolis
+                           and one of the most recognizable cities in the world. Situated in the state of New York, it is a hub of culture, finance, fashion, media, and art. The city is known for its striking skyline, dominated by architectural marvels such as the Empire State Building, One World Trade Center, 
+                          and the Statue of Liberty, which stands as a symbol of freedom and hope.</p>
+                        <a href="newyork.html" class="btn btn-primary" target="_blank">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    
 </body>
 </html>
